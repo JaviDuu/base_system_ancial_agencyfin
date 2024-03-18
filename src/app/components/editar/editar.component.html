@@ -1,0 +1,102 @@
+<div class="min-h-screen flex justify-center items-center bg-gradient-to-br from-green-100 via-blue-200 to-blye-100">
+  <div
+    class="bg-white bg-opacity-25 backdrop-blur-md backdrop-opacity shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col w-full max-w-2xl">
+    <h2 class="text-3xl font-bold mb-8 text-center">Editar Cliente</h2>
+    <form>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">
+            Nombre
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="nombre" type="text" placeholder="Nombre">
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="domicilio">
+            Domicilio
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="domicilio" type="text" placeholder="Domicilio">
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="ciudad">
+            Ciudad
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="ciudad" type="text" placeholder="Ciudad">
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="estado">
+            Estado
+          </label>
+          <select style="background-color: white;"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="estado">
+            <option>-- Selecciona un estado --</option>
+            <option>Aguascalientes</option>
+            <option>Baja California</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="tipoCliente">
+            Tipo de Cliente
+          </label>
+          <select style="background-color: white;"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="tipoCliente">
+            <option>-- Selecciona un tipo de cliente --</option>
+            <option>Física</option>
+            <option>Empresa</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="referidoPor">
+            Referido por
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="referidoPor" type="text" placeholder="Referido por">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="situacionEconomica">
+            Situación Económica
+          </label>
+          <select style="background-color: white;"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="situacionEconomica">
+            <option>-- Selecciona una situación económica --</option>
+            <option>Excelente</option>
+            <option>Muy Buena</option>
+            <option>Buena</option>
+            <option>Regular</option>
+            <option>Mala</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="estadoCivil">
+            Estado Civil
+          </label>
+          <select style="background-color: white;"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="estadoCivil">
+            <option>-- Selecciona el Estado Civil --</option>
+            <option>Soltero</option>
+            <option>Casado</option>
+            <option>Divorciado</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <button (click)="submitForm()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="button">
+          Guardar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
